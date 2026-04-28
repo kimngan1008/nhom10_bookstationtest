@@ -3,15 +3,14 @@ const nextConfig = {
   output: 'export',
   basePath: '/nhom10_bookstationtest',
   images: {
-    unoptimized: true, 
+    unoptimized: true,
   },
-  // Thêm đoạn này để bỏ qua lỗi khi build
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // THÊM DÒNG NÀY ĐỂ SỬA LỖI TRANG DYNAMIC
+  trailingSlash: true, 
+  distDir: 'out',
+  
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
 };
 
 module.exports = nextConfig;
