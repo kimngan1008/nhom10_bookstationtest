@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  /* Bảng màu chính của BookStation */
+  --color-primary: #3C2A21;    /* Nâu sẫm - Dùng cho Text, Heading, Nút bấm */
+  --color-secondary: #795548;  /* Nâu nhạt - Dùng cho Text phụ, mô tả */
+  --color-accent: #D4A373;     /* Cam đất / Vàng gold - Dùng cho highlight, nút phụ */
+  --color-danger: #E63946;     /* Đỏ - Dùng cho giá giảm, thông báo lỗi, Flash sale */
+  --color-lightBg: #F9F6F0;    /* Be sáng - Dùng cho Background phụ, nền Custom */
+  
+  /* Font chữ (Bạn nhớ import font ở layout.tsx nếu cần) */
+  --font-heading: "Playfair Display", serif;
+}
+
+/* Các style cơ bản khác (nếu có) */
+body {
+  background-color: #FAFAFA;
+  color: var(--color-primary);
+}

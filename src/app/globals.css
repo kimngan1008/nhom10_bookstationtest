@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Dancing+Script:wght@700&family=Lobster&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3E2522;
+  --color-secondary: #8C6E63;
+  --color-accent: #D3A376;
+  --color-danger: #FF0B22;
+  --color-lightBg: #FDF5E6;
+  --color-graySearch: #808080;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --font-dancing: "Dancing Script", cursive;
+  --font-lobster: "Lobster", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #f3f4f6;
+  overflow-x: hidden;
+}
+
+::placeholder {
+  color: #808080 !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.rating-box {
+  color: #facc15;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.rating-count {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 2px;
+}
