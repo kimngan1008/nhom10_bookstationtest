@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Bắt buộc để xuất static 
-  basePath: '/nhom10_bookstationtest', // 
-  images: { unoptimized: true }, // Giúp ảnh hiển thị được trên GitHub Pages
+  output: 'export', // Bắt buộc để deploy lên GitHub Pages 
+  basePath: '/nhom10_bookstationtest', // Tên repository của bạn 
+  images: {
+    unoptimized: true, // Giúp hiển thị ảnh mà không cần server NextJS [cite: 1286]
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
