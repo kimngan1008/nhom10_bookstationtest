@@ -2,16 +2,12 @@
 const nextConfig = {
   output: 'export',
   basePath: '/nhom10_bookstationtest',
-  images: {
-    unoptimized: true,
-  },
-  // Bỏ qua lỗi TypeScript để có thể deploy được ngay
+  images: { unoptimized: true },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true, // Bỏ qua lỗi TypeScript để build thành công
   },
-  // Bỏ qua lỗi ESLint (như lỗi thẻ Image bạn gặp lúc nãy)
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Bỏ qua lỗi ESLint
   },
 };
 
